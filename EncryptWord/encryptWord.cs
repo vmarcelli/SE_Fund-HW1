@@ -100,9 +100,9 @@ namespace Assignment1 {
 
     public class EncryptWord {
          
-    /* Global variables */
-    //Statistics for user guesses
-    private int shiftNum, totalQueries, highGuesses, lowGuesses;
+        /* Global variables */
+        //Statistics for user guesses
+        private int shiftNum, totalQueries, highGuesses, lowGuesses;
         private double avgGuesses;  //Average number of guess
         private bool shiftState;    //The current 'state' of the program
                                     //A boolean value that checks whether some
