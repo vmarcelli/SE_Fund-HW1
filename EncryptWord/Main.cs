@@ -2,8 +2,11 @@
 
 
 namespace EncryptWord {
+    
     class Main {
 
+        bool gameState = false;
+        
         public Main() {
             newGame();
         }
@@ -11,6 +14,7 @@ namespace EncryptWord {
         public void newGame() {
             string word = getWord();
             encrypt(word);
+            gameState = true;
         }
 
         public string getWord() {
