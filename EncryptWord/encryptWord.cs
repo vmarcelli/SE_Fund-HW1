@@ -145,13 +145,14 @@ namespace Assignment1 {
             int wordSize = word.Length;
             char newLetter;
             string decryptedWord = "";
-            char[] charArray = new char[wordSize];
+            char[] charArray = word.ToCharArray();
 
             //Decrypt
-            for(int i=0; i < wordSize; i++) {
+            for (int i=0; i < wordSize; i++) {
                 newLetter = findNewLetter(charArray[i]);
                 charArray[i] = newLetter;
-                decryptedWord += charArray[i];
+                string newLetterStr = charArray[i].ToString();
+                decryptedWord += newLetterStr;
             }
 
             return decryptedWord;

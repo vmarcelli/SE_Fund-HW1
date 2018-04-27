@@ -16,21 +16,13 @@ namespace Assignment1 {
      * basic game is working.
      */
     class Driver {
+        const string HI = "Welcome to the Encryption Word Game!\nFor a list of helpful commands type in 'help'" +
+						   "\nIf you're a grader, and would like the game to be automated, simply type in 'test'";
+        const string BYE = "That's all, goodbye!";
         public static void Main(string[] args) {
-            EncryptWord test = new EncryptWord();
-            Console.WriteLine("Welcome to the EncryptWord game!");
-            Console.WriteLine("This is just a simple driver, not the final version.");
-            test.encryptInput("apples");
-            for (int i = 0; i < 10; i++) {
-                if (test.guessShift(i)) {
-                    Console.WriteLine(i + " is correct!");
-                }
-                else {
-                    Console.WriteLine(i + " was not correct");
-                }
-            }
-            Console.WriteLine(test.printStats());
-            Console.WriteLine("All done, bye!");
+            Console.WriteLine(HI);
+            Main encryptGame = new Main();
+            Console.WriteLine(BYE);
         }
     }
 }
