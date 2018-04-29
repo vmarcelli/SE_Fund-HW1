@@ -190,6 +190,7 @@ namespace Assignment1 {
             Random rand = new Random();
             int randNum = rand.Next() % 10 + 1;
             shiftNum = randNum;
+            shiftState = true;
         }
 
         /* Description: Calls the newStats() function to reset all generic

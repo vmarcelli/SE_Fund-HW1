@@ -1,26 +1,30 @@
 ﻿/* 
  * AUTHOR: Valerio Marcelli
  * FILENAME: Driver.cs
- * DATE: 4/15/2018
- * REVISION HISTORY: Last revised 4/15/2018
+ * DATE: 4/27/2018
+ * REVISION HISTORY: Last revised 4/29/2018
  * REFERENCES: None
  */
 using System;
 
 namespace Assignment1 {
     /* Description:
-     * This is a simple test Driver class created to make sure that the
-     * EncryptWord class is functioning correctly. Since this is the
-     * first iteration of the driver, it is in a very infantile state;
-     * it is unfinished currently, its only purpose to make sure that the
-     * basic game is working.
+     * This is a simple test Driver class created to get the Main class
+     * working. It only has a hello and goodbye messages as well as an 
+     * initiator for the Main class. That's all there is. 
      */
     class Driver {
-        const string HI = "Welcome to the Encryption Word Game!\nFor a list of helpful commands type in 'help'" +
-						   "\nIf you're a grader, and would like the game to be automated, simply type in 'test'";
+        //Hello message
+        const string HI = "Welcome to the Encryption Word Game!\nFor a " +
+                          "list of helpful " +
+                          "commands type in 'help'" +
+						  "\nIf you're a grader, and would like the game" +
+                          " to be automated, simply type in 'test'";
+        //Goodbye Message
         const string BYE = "That's all, goodbye!";
         public static void Main(string[] args) {
             Console.WriteLine(HI);
+            //Starts Main game-loop until the user uses 'quit' command
             Main encryptGame = new Main();
             Console.WriteLine(BYE);
         }
